@@ -10,7 +10,7 @@
         <h1>Simple Salary Calculator</h1>
         <hr>
         <br>
-        <div id="inputtable">
+        <div id="inputTable">
             <form name="myForm" action="results.jsp" method="post">
                 <table>
                     <tbody>

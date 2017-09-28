@@ -8,7 +8,7 @@ h1
 {
 	text-align: center;
 }
-#inputtable
+#inputTable
 {
 	margin: auto;
 	text-align: left;
@@ -20,3 +20,8 @@ hr
 	background-color: white;
 	border: none;
 }
+#resultsTable
+{
+	border: 1px solid white;
+}
+
