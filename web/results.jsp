@@ -19,10 +19,7 @@
         double otPayRate = 0;
         double otPay = 0;
         double regularPay = 0;
-        double taxablePay = grossPay - preTaxDeduct;
         double taxAmount = 0;
-        double postTaxPay = taxablePay - taxAmount;
-        double netPay = postTaxPay - postTaxDeduct;
         
         if (hoursWorked > 40) {
             regularHours = 40;
@@ -34,13 +31,17 @@
         }
         else{   
             grossPay = hoursWorked * hourlyPay;
-        }
+        }    
+        double taxablePay = grossPay - preTaxDeduct;
+  
         if (grossPay < 500) {
             taxAmount = taxablePay * 0.18;
         }
         else {
             taxAmount = taxablePay * 0.22;
         }
+        double postTaxPay = taxablePay - taxAmount;
+        double netPay = postTaxPay - postTaxDeduct;
     %>
     
     <body>
